@@ -1,5 +1,6 @@
 import { ColorCard } from "./components/ColorCard";
 import { colorCards } from "./data/colorCards";
+import "./styles/tokens/variables.css";
 import "./App.css";
 
 function App() {

@@ -1,0 +1,100 @@
+{
+  "color": {
+    "cs-black": {
+      "value": "rgba(51,51,51,1)",
+      "comment": ""
+    },
+    "cs-white": {
+      "value": "rgba(244,244,244,1)",
+      "comment": ""
+    },
+    "cs-gray": {
+      "100": {
+        "value": "rgba(242,242,242,1)",
+        "comment": ""
+      },
+      "200": {
+        "value": "rgba(224,224,224,1)",
+        "comment": ""
+      },
+      "300": {
+        "value": "rgba(189,189,189,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(130,130,130,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(79,79,79,1)",
+        "comment": ""
+      }
+    },
+    "cs-blue": {
+      "300": {
+        "value": "rgba(86,204,242,0.8)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(45,156,219,0.89)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(47,128,237,1)",
+        "comment": ""
+      }
+    },
+    "cs-green": {
+      "300": {
+        "value": "rgba(111,207,151,1)",
+        "comment": ""
+      },
+      "400": {
+        "value": "rgba(39,174,96,1)",
+        "comment": ""
+      },
+      "500": {
+        "value": "rgba(33,150,83,1)",
+        "comment": ""
+      }
+    }
+  },
+  "size": {
+    "Heading": {
+      "lg": {
+        "value": "48",
+        "comment": ""
+      },
+      "m": {
+        "value": "40",
+        "comment": ""
+      },
+      "sm": {
+        "value": "32",
+        "comment": ""
+      },
+      "xs": {
+        "value": "26",
+        "comment": ""
+      }
+    },
+    "Body": {
+      "lg": {
+        "value": "20",
+        "comment": ""
+      },
+      "m": {
+        "value": "18",
+        "comment": ""
+      },
+      "s": {
+        "value": "16",
+        "comment": ""
+      },
+      "microscopy": {
+        "value": "12",
+        "comment": ""
+      }
+    }
+  }
+}
