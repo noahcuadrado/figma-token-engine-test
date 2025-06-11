@@ -3,9 +3,10 @@ import "./ColorCard.css";
 interface ColorCardProps {
   color: string;
   hex: string;
+  description?: string;
 }
 
-export const ColorCard = ({ color, hex }: ColorCardProps) => {
+export const ColorCard = ({ color, hex, description }: ColorCardProps) => {
   return (
     <div className="color-card">
       <div
@@ -14,7 +15,7 @@ export const ColorCard = ({ color, hex }: ColorCardProps) => {
       ></div>
       <div className="color-card__content">
         <h3>{color}</h3>
-        <p>{hex}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

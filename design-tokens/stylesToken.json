@@ -62,37 +62,37 @@
   "size": {
     "Heading": {
       "lg": {
-        "value": "48",
+        "value": "48px",
         "comment": ""
       },
       "m": {
-        "value": "40",
+        "value": "40px",
         "comment": ""
       },
       "sm": {
-        "value": "32",
+        "value": "32px",
         "comment": ""
       },
       "xs": {
-        "value": "26",
+        "value": "26px",
         "comment": ""
       }
     },
     "Body": {
       "lg": {
-        "value": "20",
+        "value": "20px",
         "comment": ""
       },
       "m": {
-        "value": "18",
+        "value": "18px",
         "comment": ""
       },
       "s": {
-        "value": "16",
+        "value": "16px",
         "comment": ""
       },
       "microscopy": {
-        "value": "12",
+        "value": "12px",
         "comment": ""
       }
     }

@@ -1,37 +1,34 @@
-export const typography = {
-  headingLg: {
-    fontSize: "2rem",
-    fontWeight: "bold",
-    lineHeight: "2.5rem",
+export const typography = [
+  {
+    name: "heading-lg",
+    size: "var(--size-heading-lg)",
   },
-  headingM: {
-    fontSize: "1.5rem",
-    fontWeight: "bold",
-    lineHeight: "2rem",
+  {
+    name: "heading-m",
+    size: "var(--size-heading-m)",
   },
-  bodyL: {
-    fontSize: "1.25rem",
-    fontWeight: "normal",
-    lineHeight: "1.75rem",
+  {
+    name: "heading-sm",
+    size: "var(--size-heading-sm)",
   },
-  bodyM: {
-    fontSize: "1rem",
-    fontWeight: "normal",
-    lineHeight: "1.5rem",
+  {
+    name: "heading-xs",
+    size: "var(--size-heading-xs)",
   },
-  bodyS: {
-    fontSize: "0.875rem",
-    fontWeight: "normal",
-    lineHeight: "1.25rem",
+  {
+    name: "body-lg",
+    size: "var(--size-body-lg)",
   },
-  caption: {
-    fontSize: "0.75rem",
-    fontWeight: "normal",
-    lineHeight: "1rem",
+  {
+    name: "body-m",
+    size: "var(--size-body-m)",
   },
-  label: {
-    fontSize: "0.875rem",
-    fontWeight: "bold",
-    lineHeight: "1.25rem",
+  {
+    name: "body-s",
+    size: "var(--size-body-s)",
   },
-};
+  {
+    name: "body-microscopy",
+    size: "var(--size-body-microscopy)",
+  },
+];

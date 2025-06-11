@@ -1,9 +1,8 @@
 interface TypographyProps {
-  text: string;
-  size?: "small" | "medium" | "large";
-  weight?: "light" | "normal" | "bold";
+  size: string;
+  name: string;
 }
 
-export default function Typography({ text, size, weight }: TypographyProps) {
-  return <h3 style={{ fontSize: size, fontWeight: weight }}>{text}</h3>;
+export default function Typography({ size, name }: TypographyProps) {
+  return <p style={{ fontSize: size }}>{name}</p>;
 }

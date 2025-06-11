@@ -1,54 +1,128 @@
-# React + TypeScript + Vite
+# 🎨 Figma Token Integration Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates **how to integrate design tokens from Figma into a React application** using [Style Dictionary](https://styledictionary.com/) and CSS variables. It is designed as a demo for developers about how to seamlessly connect their design system in Figma with their codebase, ensuring consistent and easily maintainable styles.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 What You'll Learn
 
-## Expanding the ESLint configuration
+- How to **export design tokens from Figma** using a plugin.
+- How to **convert Figma tokens to Style Dictionary format**.
+- How to **generate CSS variables** from design tokens.
+- How to **use those variables in your React app** for colors, typography, and more.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Style Dictionary](https://styledictionary.com/)
+- [Figma-to-Style-Dictionary JSON Converter](https://www.figma.com/community/plugin/1362710514082324638/figma-to-style-dictionary-json-converter)
+
+---
+
+## 📦 Project Structure
+
+├── design-tokens/ # 🎨 JSON tokens exported from Figma
+├── src/
+│ └── styles/
+│ └── tokens/ # 🏗️ Auto-generated CSS variables
+│ └── components/ # 🧩 Example components using tokens
+├── style-dictionary.config.json # ⚙️ Style Dictionary configuration
+
+---
+
+## 📝 Step-by-Step Guide
+
+### 1. **Prepare Your Design Tokens in Figma**
+
+- Organize your colors, typography, and other tokens in Figma using [Styles](https://help.figma.com/hc/en-us/articles/360039957034-Create-and-apply-text-styles).
+- Use clear, consistent naming for your tokens.
+
+### 2. **Export Tokens from Figma**
+
+- Install the [Figma-to-Style-Dictionary JSON Converter](https://www.figma.com/community/plugin/1362710514082324638/figma-to-style-dictionary-json-converter) plugin in Figma.
+- Run the plugin and export your tokens as a JSON file.
+- Save the exported file in the `design-tokens/` directory (e.g., `design-tokens/stylesToken.json`).
+
+### 3. **Configure Style Dictionary**
+
+- Edit [`style-dictionary.config.json`](style-dictionary.config.json) to point to your token files and define the output format (CSS variables):
+
+  ```json
+  {
+    "source": ["design-tokens/**/*.json"],
+    "platforms": {
+      "css": {
+        "transformGroup": "css",
+        "buildPath": "src/styles/tokens/",
+        "files": [
+          {
+            "destination": "variables.css",
+            "format": "css/variables",
+            "options": {
+              "outputReferences": true
+            }
+          }
+        ]
+      }
+    }
+  }
+  ```
+
+  This is just a basic example, but the config could be more complex. If you want to learn more visit [configuration style dictionary](https://styledictionary.com/reference/config/)
+
+### 4. **Generate CSS Variables**
+
+Run the following command to generate CSS variables from your tokens:
+
+This will create (or update) src/styles/tokens/variables.css with all your design tokens as CSS variables.
+
+```sh
+npm run tokens-build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 5. **Use CSS Variables in Your App**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Import the generated CSS file in your app entry point or component:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Use the variables in your CSS or inline styles:
+
+```sh
+import "./styles/tokens/variables.css";
 ```
+
+### 6. **Enjoy Consistent, Maintainable Styles!**
+
+- Now, your app uses the same design tokens as your Figma files.
+- To update styles, just update tokens in Figma, export, and rebuild!
+
+### 💡 **Example Usage**
+
+See src/App.tsx for examples of how to use color and typography tokens in components like ColorCard and Typography.
+
+### 🤝 **Why Use This Approach?**
+
+**Consistency:** Design and code always match.
+**Scalability:** Update tokens in Figma, sync to code in seconds.
+**Maintainability:** No more hardcoded values or manual updates.
+**Collaboration:** Designers and developers speak the same language.
+
+### 🧑‍💻 **Try It Yourself!**
+
+1. Clone this repo.
+2. Export your own tokens from Figma.
+3. Replace the JSON in design-tokens/.
+4. Run npm run tokens-build.
+5. Use your tokens in your app!
+
+### 📚 **Resources**
+
+- [Style Dictionary Documentation](https://styledictionary.com/getting-started/installation/)
+- [Figma-to-Style-Dictionary JSON Converter](https://www.figma.com/community/plugin/1362710514082324638/figma-to-style-dictionary-json-converter)
+
+### ⭐️ **Get Inspired!**
+
+Integrate design tokens into your workflow and supercharge your design system if you found this demo helpful

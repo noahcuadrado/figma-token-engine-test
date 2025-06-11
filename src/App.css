@@ -15,23 +15,31 @@ section {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  margin-top: 36px;
+  margin-top: 64px;
 }
 
 .color-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 16px;
   margin-top: 16px;
 }
 
-h1 {
+.main-title {
   margin-bottom: 24px;
   text-align: center;
+  font-size: var(--size-heading-lg);
 }
 
-h2 {
+.main-description {
+  margin-bottom: 32px;
+  font-size: var(--size-body-m);
+  color: var(--color-cs-gray-600);
+}
+
+.section-title {
   margin-bottom: 16px;
+  font-size: var(--size-heading-sm);
 }
 
 .typography-example {

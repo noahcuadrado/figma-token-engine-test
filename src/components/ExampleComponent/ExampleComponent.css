@@ -1,0 +1,68 @@
+.ecommerce-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  width: 400px;
+  border: 1px solid var(--color-cs-gray-200);
+  border-radius: 8px;
+  margin: 24px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.ecommerce-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+.ecommerce-details {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-top: 16px;
+}
+.ecommerce-title {
+  font-size: var(--size-heading-xs);
+  color: var(--color-cs-black);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.ecommerce-description {
+  font-size: var(--size-body-s);
+  color: var(--color-cs-gray-500);
+  margin-bottom: 20px;
+}
+.ecommerce-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.ecommerce-price {
+  font-size: var(--size-body-lg);
+  display: flex;
+  flex-direction: column;
+}
+.ecommerce-price-label {
+  font-size: var(--size-body-s);
+  color: var(--color-cs-gray-400);
+}
+.ecommerce-price-value {
+  font-size: var(--size-body-lg);
+  color: var(--color-cs-black);
+  font-weight: bold;
+}
+.ecommerce-button {
+  padding: 10px 20px;
+  background-color: var(--color-cs-blue-500);
+  font-size: var(--size-body-m);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 60%;
+}
+.ecommerce-button:hover {
+  background-color: var(--color-cs-blue-400);
+  transition: background-color 0.3s ease;
+}

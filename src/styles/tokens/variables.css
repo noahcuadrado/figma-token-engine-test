@@ -16,12 +16,12 @@
   --color-cs-green-300: rgba(111,207,151,1);
   --color-cs-green-400: rgba(39,174,96,1);
   --color-cs-green-500: rgba(33,150,83,1);
-  --size-heading-lg: 48;
-  --size-heading-m: 40;
-  --size-heading-sm: 32;
-  --size-heading-xs: 26;
-  --size-body-lg: 20;
-  --size-body-m: 18;
-  --size-body-s: 16;
-  --size-body-microscopy: 12;
+  --size-heading-lg: 48px;
+  --size-heading-m: 40px;
+  --size-heading-sm: 32px;
+  --size-heading-xs: 26px;
+  --size-body-lg: 20px;
+  --size-body-m: 18px;
+  --size-body-s: 16px;
+  --size-body-microscopy: 12px;
 }
