@@ -60,10 +60,6 @@
     }
   },
   "size": {
-    "Logo Title": {
-      "value": "64",
-      "comment": "Main Text For Logo Title"
-    },
     "Heading": {
       "lg": {
         "value": "48",
