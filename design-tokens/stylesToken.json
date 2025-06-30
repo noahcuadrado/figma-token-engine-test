@@ -54,7 +54,7 @@
         "comment": ""
       },
       "500": {
-        "value": "rgba(33,150,83,1)",
+        "value": "rgba(150,33,66,1)",
         "comment": ""
       }
     }
@@ -66,7 +66,7 @@
     },
     "Heading": {
       "lg": {
-        "value": "12",
+        "value": "48",
         "comment": ""
       },
       "m": {
