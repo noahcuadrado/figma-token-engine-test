@@ -60,39 +60,43 @@
     }
   },
   "size": {
+    "Logo Title": {
+      "value": "64",
+      "comment": "Main Text For Logo Title"
+    },
     "Heading": {
       "lg": {
-        "value": "48px",
+        "value": "12",
         "comment": ""
       },
       "m": {
-        "value": "40px",
+        "value": "40",
         "comment": ""
       },
       "sm": {
-        "value": "32px",
+        "value": "32",
         "comment": ""
       },
       "xs": {
-        "value": "26px",
+        "value": "26",
         "comment": ""
       }
     },
     "Body": {
       "lg": {
-        "value": "20px",
+        "value": "20",
         "comment": ""
       },
       "m": {
-        "value": "18px",
+        "value": "18",
         "comment": ""
       },
       "s": {
-        "value": "16px",
+        "value": "16",
         "comment": ""
       },
       "microscopy": {
-        "value": "12px",
+        "value": "12",
         "comment": ""
       }
     }
